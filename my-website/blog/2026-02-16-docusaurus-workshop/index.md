@@ -228,11 +228,11 @@ const config = {
   // Set the production url of your site here
   url: 'https://YOUR-USERNAME.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/plc-diary-docusaurus-site/',
+  baseUrl: '/YOUR-REPO-NAME/',
 
   // GitHub pages deployment config
   organizationName: 'YOUR-USERNAME', // Your GitHub username
-  projectName: 'plc-diary-docusaurus-site', // Your repo name
+  projectName: 'YOUR-REPO-NAME', // Your repo name
 
   // ... rest of the config
 };
@@ -266,7 +266,7 @@ If you're deploying to a **user/organization site** (repo named `USERNAME.github
 :::
 
 :::warning
-Make sure to replace `YOUR-USERNAME` with your actual GitHub username!
+Make sure to replace `YOUR-USERNAME` AND `YOUR-REPO-NAME` with your actual GitHub username and repo name!
 :::
 
 ---
