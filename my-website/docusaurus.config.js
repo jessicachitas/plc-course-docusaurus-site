@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Learning Diary',
-  tagline: 'Documenting my programming journey',
+  title: 'PLC Course - How to use Docusaurus',
+  tagline: 'Learn how to use Docusaurus to create a blog',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
