@@ -15,6 +15,7 @@ Before we begin, make sure you have:
 - A computer running Windows, macOS, or Linux
 - An internet connection
 - A GitHub account (create one at [github.com](https://github.com) if you don't have one)
+- Visual Studio Code (please install it [here](https://code.visualstudio.com/) if you don't have it already)
 
 ---
 
