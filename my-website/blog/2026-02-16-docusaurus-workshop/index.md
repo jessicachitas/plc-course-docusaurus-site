@@ -380,13 +380,14 @@ git push origin main
 
 ---
 
-## Next Steps
+## Next Steps / Future Learning 
 
 Now that your Docusaurus site is up and running, you can:
 
-- ✏️ Add more blog posts to document your learning
-- 🎨 Customize the theme and styling
-- 📚 Add documentation pages for your projects
-- 🔌 Explore Docusaurus plugins for additional functionality
+- Add more blog posts to document your learning
+- Customize the theme and styling using HTML and CSS within the JS tags
+- Explore Docusaurus plugins for additional functionality
 
-Happy blogging! 🚀
+For more information on further development of your project, visit the official [Docusaurus site](https://docusaurus.io/)
+
+Happy blogging!
