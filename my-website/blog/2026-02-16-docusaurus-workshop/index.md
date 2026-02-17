@@ -99,7 +99,7 @@ git --version
 | Setting | Value |
 |---------|-------|
 | **Owner** | Your username |
-| **Repository name** | `plc-diary-docusaurus-site` |
+| **Repository name** | `YOUR-REPO-NAME` |
 | **Visibility** | Public |
 | **Add .gitignore** | Node |
 
@@ -114,20 +114,20 @@ git --version
 After creating your repository, you need to clone it to your local machine.
 
 1. On your repository page, click the green **Code** button
-2. Copy the HTTPS URL (it should look like `https://github.com/YOUR-USERNAME/plc-diary-docusaurus-site.git`)
+2. Copy the HTTPS URL (it should look like `https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git`)
 
 ![Clone repo](./clone-repo.png)
 
 3. Open your terminal and run:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/plc-diary-docusaurus-site.git
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 ```
 
 4. Navigate into the cloned directory:
 
 ```bash
-cd plc-diary-docusaurus-site
+cd YOUR-REPO-NAME
 ```
 
 ---
@@ -257,8 +257,8 @@ Here's what each configuration option does:
 Your final site URL is constructed by combining `url` + `baseUrl`:
 
 ```
-https://YOUR-USERNAME.github.io + /plc-diary-docusaurus-site/
-= https://YOUR-USERNAME.github.io/plc-diary-docusaurus-site/
+https://YOUR-USERNAME.github.io + /YOUR-REPO-NAME/
+= https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 ```
 
 :::tip
@@ -361,7 +361,7 @@ git push origin main
 4. Wait for the workflow to complete (it should show a green checkmark ✓)
 5. Once deployed, your site will be available at:
    ```
-   https://YOUR-USERNAME.github.io/plc-diary-docusaurus-site/
+   https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
    ```
 
 ---
