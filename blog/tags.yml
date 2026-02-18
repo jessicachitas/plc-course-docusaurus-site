@@ -1,0 +1,38 @@
+facebook:
+  label: Facebook
+  permalink: /facebook
+  description: Facebook tag description
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello tag description
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus tag description
+
+hola:
+  label: Hola
+  permalink: /hola
+  description: Hola tag description
+
+workshop:
+  label: Workshop
+  permalink: /workshop
+  description: Workshop tag description
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Tutorial tag description
+
+github:
+  label: GitHub
+  permalink: /github
+  description: GitHub tag description
+
+nodejs:
+  label: Node.js
+  permalink: /nodejs
