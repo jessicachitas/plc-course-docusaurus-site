@@ -1,7 +1,6 @@
 ---
 slug: docusaurus-workshop
 title: "Workshop: How to Create a Docusaurus Blog"
-authors: ['jchitas']
 tags: [workshop, docusaurus, tutorial, github, nodejs]
 ---
 

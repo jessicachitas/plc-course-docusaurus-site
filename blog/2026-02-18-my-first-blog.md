@@ -1,7 +1,6 @@
 ---
 slug: "my-first-blog"
 title: "My First Blog"
-author: [jchitas]
 ---
 
 ## Welcome to my Blog
