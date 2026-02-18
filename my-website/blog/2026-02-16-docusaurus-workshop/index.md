@@ -283,63 +283,53 @@ mkdir -p .github/workflows
 Create a new file `.github/workflows/deploy.yml` with the following content:
 
 ```yaml
-# This is a basic workflow to help you get started with Actions
+name: Deploy to GitHub Pages
 
-name: Build PLC website
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "dev" branch
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    name: Build PLC website
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
-
+          cache-dependency-path: [YOUR-WEBSITE]/package-lock.json
+      
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+        working-directory: [YOUR-WEBSITE]
+      
       - name: Build website
         run: npm run build
-
-      - name: Upload Build Artifact
+        working-directory: [YOURE-WEBSITE]
+      
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: my-website/build
 
   deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
 ```
 
 ---
